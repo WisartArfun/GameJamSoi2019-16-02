@@ -1,20 +1,18 @@
 extends KinematicBody2D
 
 const MOVE_SPEED = 300
-
-func _ready():
-	yield(get_tree(), "idle_frame")
-	# get_tree().call_group("zombies", "set_player", self)
+const ROT_SPEED = 1
 
 func _physics_process(delta):
 	var move_vec = Vector2()
-	if Input.is_action_pressed("ui_up"):
-		move_vec.y -= 1
+	if Input.is_action_pressed("ui_up") and Input.is_action_pressed("ui_down"):
+		move_vec = Vector2(cos(global_rotation), sin(global_rotation))
+	elif Input.is_action_pressed("ui_up"):
+		global_rotation += ROT_SPEED * delta
+	elif Input.is_action_pressed("ui_down"):
+		global_rotation -= ROT_SPEED * delta
 	move_vec = move_vec.normalized()
 	move_and_collide(move_vec* MOVE_SPEED * delta)
-	
-	var look_vec = get_global_mouse_position() - global_position
-	global_rotation = atan2(look_vec.y, look_vec.x)
 
 func kill():
 	get_tree().reload_current_scene()
