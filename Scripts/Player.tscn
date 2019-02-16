@@ -19,7 +19,7 @@ custom_solver_bias = 0.0
 normal = Vector2( 0, -1 )
 d = 6.45403
 
-[node name="Player" type="KinematicBody2D"]
+[node name="Player" type="KinematicBody2D" index="0"]
 
 input_pickable = false
 collision_layer = 1
