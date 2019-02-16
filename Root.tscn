@@ -4,7 +4,7 @@
 [ext_resource path="res://Graphics/zombie.png" type="Texture" id=2]
 [ext_resource path="res://Scripts/Player.tscn" type="PackedScene" id=3]
 
-[node name="Root" type="Node" index="0"]
+[node name="Root" type="Node"]
 
 [node name="Zombie" parent="." index="0" instance=ExtResource( 1 )]
 
