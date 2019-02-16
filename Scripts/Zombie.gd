@@ -17,7 +17,7 @@ func _physics_process(delta):
 	global_rotation = atan2(vec_to_player.y, vec_to_player.x)
 	move_and_collide(vec_to_player * MOVE_SPEED * delta)
 
-func kill():
+func die():
 	queue_free()
 
 func set_player(p):
