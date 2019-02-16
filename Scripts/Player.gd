@@ -35,6 +35,9 @@ func _physics_process(delta):
 	#if collider1.one_way_collision()
 	#	kill()
 <<<<<<< HEAD
+<<<<<<< HEAD
+>>>>>>> parent of d9f69ad... killing monsters and resetting works
+=======
 >>>>>>> parent of d9f69ad... killing monsters and resetting works
 =======
 >>>>>>> parent of d9f69ad... killing monsters and resetting works

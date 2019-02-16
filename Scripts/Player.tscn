@@ -14,24 +14,35 @@ custom_solver_bias = 0.0
 radius = 20.0
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
+=======
+>>>>>>> parent of d9f69ad... killing monsters and resetting works
 
 [sub_resource type="CircleShape2D" id=2]
 
 custom_solver_bias = 0.0
 radius = 20.0
+<<<<<<< HEAD
+>>>>>>> parent of d9f69ad... killing monsters and resetting works
+=======
 >>>>>>> parent of d9f69ad... killing monsters and resetting works
 =======
 >>>>>>> parent of d9f69ad... killing monsters and resetting works
 
-[sub_resource type="CircleShape2D" id=2]
+[sub_resource type="LineShape2D" id=3]
 
 custom_solver_bias = 0.0
+<<<<<<< HEAD
 <<<<<<< HEAD
 normal = Vector2( 0, -1 )
 d = 0.0
 =======
 radius = 20.0
+>>>>>>> parent of d9f69ad... killing monsters and resetting works
+=======
+normal = Vector2( 0, -1 )
+d = 0.0
 >>>>>>> parent of d9f69ad... killing monsters and resetting works
 
 [sub_resource type="LineShape2D" id=3]
@@ -40,6 +51,7 @@ custom_solver_bias = 0.0
 normal = Vector2( 0, -1 )
 d = 0.0
 
+<<<<<<< HEAD
 <<<<<<< HEAD
 [node name="Player" type="KinematicBody2D"]
 
@@ -54,6 +66,8 @@ script = ExtResource( 1 )
 >>>>>>> parent of d9f69ad... killing monsters and resetting works
 =======
 >>>>>>> parent of d9f69ad... killing monsters and resetting works
+=======
+>>>>>>> parent of d9f69ad... killing monsters and resetting works
 [node name="coll_player1" type="CollisionShape2D" parent="." index="0"]
 
 position = Vector2( -2.97625, 0 )
@@ -61,6 +75,7 @@ scale = Vector2( 1.1294, 1 )
 shape = SubResource( 1 )
 _sections_unfolded = [ "Transform" ]
 
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 [node name="player1" type="Node2D" parent="." index="1"]
@@ -76,10 +91,14 @@ _sections_unfolded = [ "Transform" ]
 =======
 [node name="player1" type="Sprite" parent="." index="1"]
 >>>>>>> parent of d9f69ad... killing monsters and resetting works
+=======
+[node name="player1" type="Sprite" parent="." index="1"]
+>>>>>>> parent of d9f69ad... killing monsters and resetting works
 
 texture = ExtResource( 2 )
 _sections_unfolded = [ "Transform" ]
 
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 [node name="Dog1Head" type="Sprite" parent="player1" index="1"]
@@ -98,6 +117,8 @@ _sections_unfolded = [ "Transform" ]
 >>>>>>> parent of d9f69ad... killing monsters and resetting works
 =======
 >>>>>>> parent of d9f69ad... killing monsters and resetting works
+=======
+>>>>>>> parent of d9f69ad... killing monsters and resetting works
 [node name="coll_player2" type="CollisionShape2D" parent="." index="2"]
 
 position = Vector2( -5.70153, 200 )
@@ -106,7 +127,11 @@ _sections_unfolded = [ "Transform" ]
 
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 [node name="player2" type="Node2D" parent="." index="3"]
+=======
+[node name="player2" type="Sprite" parent="." index="3"]
+>>>>>>> parent of d9f69ad... killing monsters and resetting works
 =======
 [node name="player2" type="Sprite" parent="." index="3"]
 >>>>>>> parent of d9f69ad... killing monsters and resetting works
@@ -119,6 +144,7 @@ rotation = 1.5708
 scale = Vector2( 0.1, 0.1 )
 _sections_unfolded = [ "Offset", "Transform" ]
 
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 [node name="Dog2Body" type="Sprite" parent="player2" index="0"]
@@ -136,6 +162,8 @@ _sections_unfolded = [ "Transform" ]
 texture = ExtResource( 7 )
 _sections_unfolded = [ "Transform" ]
 
+=======
+>>>>>>> parent of d9f69ad... killing monsters and resetting works
 =======
 >>>>>>> parent of d9f69ad... killing monsters and resetting works
 =======
