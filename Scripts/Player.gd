@@ -36,6 +36,9 @@ func _physics_process(delta):
 	#	kill()
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
+>>>>>>> parent of d9f69ad... killing monsters and resetting works
+=======
 >>>>>>> parent of d9f69ad... killing monsters and resetting works
 =======
 >>>>>>> parent of d9f69ad... killing monsters and resetting works
