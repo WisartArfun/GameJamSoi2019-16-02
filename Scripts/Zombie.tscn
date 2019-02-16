@@ -1,7 +1,7 @@
 [gd_scene load_steps=4 format=2]
 
 [ext_resource path="res://Scripts/Zombie.gd" type="Script" id=1]
-[ext_resource path="res://Graphics/zombie.png" type="Texture" id=2]
+[ext_resource path="res://Graphics/Cat1.png" type="Texture" id=2]
 
 [sub_resource type="CircleShape2D" id=1]
 
@@ -20,9 +20,15 @@ script = ExtResource( 1 )
 
 shape = SubResource( 1 )
 
-[node name="Sprite" type="Sprite" parent="." index="1"]
+[node name="Sprite" type="Node2D" parent="." index="1"]
 
-position = Vector2( 12.7109, 2.38329 )
+rotation = 1.5708
+scale = Vector2( 0.1, 0.1 )
+_sections_unfolded = [ "Transform" ]
+
+[node name="Cat1" type="Sprite" parent="Sprite" index="0"]
+
+position = Vector2( -2.83775, 15.8168 )
 texture = ExtResource( 2 )
 
 
