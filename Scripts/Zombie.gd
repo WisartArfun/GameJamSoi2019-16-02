@@ -17,8 +17,11 @@ func _physics_process(delta):
 	global_rotation = atan2(vec_to_player.y, vec_to_player.x)
 	var collision = move_and_collide(vec_to_player * MOVE_SPEED * delta * 0)
 	if collision:
-		print(collision)
-		print(collision.collider.get_name())
+		var name = collision.collider.get_name()
+		if name == "Player":
+			die()
+		else:
+			player.kill()
 
 func die():
 	queue_free()
