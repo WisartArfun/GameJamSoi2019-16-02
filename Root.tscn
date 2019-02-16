@@ -2,10 +2,10 @@
 
 [ext_resource path="res://Scripts/Player.tscn" type="PackedScene" id=1]
 
-[node name="Root" type="Node" index="0"]
+[node name="Node" type="Node" index="0"]
 
 [node name="Player" parent="." index="0" instance=ExtResource( 1 )]
 
-position = Vector2( 507.437, 300.553 )
+position = Vector2( 508.437, 300.553 )
 
 
