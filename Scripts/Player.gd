@@ -12,38 +12,6 @@ func _physics_process(delta):
 		move_vec = Vector2(cos(global_rotation), sin(global_rotation)) * 200 * ROT_SPEED
 	elif Input.is_action_pressed("p2_fw"):
 		global_rotation -= ROT_SPEED * delta
-	
-<<<<<<< HEAD
-	var collision = move_and_collide(move_vec * delta)	
-	if collision:	
-		print(collision.collider.get_name())	
-		if collision.collider.get_name() == "Zombie":	
-			kill()	
-		#collision.collider.die()	
-
-=======
-	move_and_collide(move_vec * delta)
-	#var collision = move_and_collide(move_vec * delta)
-	#if collision:
-		#print(collision.collider.get_name())
-		#if collision.collider.get_name() == "Zombie":
-			#kill()
-		#collision.collider.die()
-			 
-	
-	#var collider1 = get_node("coll_player1")
-	#if collider1.one_way_collision()
-	#	kill()
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
->>>>>>> parent of d9f69ad... killing monsters and resetting works
-=======
->>>>>>> parent of d9f69ad... killing monsters and resetting works
-=======
->>>>>>> parent of d9f69ad... killing monsters and resetting works
-=======
->>>>>>> parent of d9f69ad... killing monsters and resetting works
 
 func kill():
 	get_tree().reload_current_scene()

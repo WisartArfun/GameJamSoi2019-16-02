@@ -1,70 +1,13 @@
-[gd_scene load_steps=11 format=2]
+[gd_scene load_steps=4 format=2]
 
-[ext_resource path="res://Scripts/Player.gd" type="Script" id=1]
-[ext_resource path="res://Graphics/Dog1Body.png" type="Texture" id=2]
-[ext_resource path="res://Graphics/Dog1Head.png" type="Texture" id=3]
-[ext_resource path="res://Graphics/Dog1Tail.png" type="Texture" id=4]
-[ext_resource path="res://Graphics/Dog2Body.png" type="Texture" id=5]
-[ext_resource path="res://Graphics/Dog2Head.png" type="Texture" id=6]
-[ext_resource path="res://Graphics/Dog2Tail.png" type="Texture" id=7]
+[ext_resource path="res://Player.gd" type="Script" id=1]
+[ext_resource path="res://soldier.png" type="Texture" id=2]
 
 [sub_resource type="CircleShape2D" id=1]
 
 custom_solver_bias = 0.0
 radius = 20.0
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
-=======
->>>>>>> parent of d9f69ad... killing monsters and resetting works
-=======
->>>>>>> parent of d9f69ad... killing monsters and resetting works
 
-[sub_resource type="CircleShape2D" id=2]
-
-custom_solver_bias = 0.0
-radius = 20.0
-<<<<<<< HEAD
-<<<<<<< HEAD
->>>>>>> parent of d9f69ad... killing monsters and resetting works
-=======
->>>>>>> parent of d9f69ad... killing monsters and resetting works
-=======
->>>>>>> parent of d9f69ad... killing monsters and resetting works
-=======
->>>>>>> parent of d9f69ad... killing monsters and resetting works
-
-[sub_resource type="LineShape2D" id=3]
-
-custom_solver_bias = 0.0
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-normal = Vector2( 0, -1 )
-d = 0.0
-=======
-radius = 20.0
->>>>>>> parent of d9f69ad... killing monsters and resetting works
-=======
-normal = Vector2( 0, -1 )
-d = 0.0
->>>>>>> parent of d9f69ad... killing monsters and resetting works
-=======
-normal = Vector2( 0, -1 )
-d = 0.0
->>>>>>> parent of d9f69ad... killing monsters and resetting works
-
-[sub_resource type="LineShape2D" id=3]
-
-custom_solver_bias = 0.0
-normal = Vector2( 0, -1 )
-d = 0.0
-
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
 [node name="Player" type="KinematicBody2D"]
 
 input_pickable = false
@@ -73,135 +16,20 @@ collision_mask = 1
 collision/safe_margin = 0.08
 script = ExtResource( 1 )
 
-<<<<<<< HEAD
-=======
->>>>>>> parent of d9f69ad... killing monsters and resetting works
-=======
->>>>>>> parent of d9f69ad... killing monsters and resetting works
-=======
->>>>>>> parent of d9f69ad... killing monsters and resetting works
-=======
->>>>>>> parent of d9f69ad... killing monsters and resetting works
-[node name="coll_player1" type="CollisionShape2D" parent="." index="0"]
+[node name="CollisionShape2D" type="CollisionShape2D" parent="." index="0"]
 
-position = Vector2( -2.97625, 0 )
-scale = Vector2( 1.1294, 1 )
 shape = SubResource( 1 )
-_sections_unfolded = [ "Transform" ]
 
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-[node name="player1" type="Node2D" parent="." index="1"]
+[node name="Sprite" type="Sprite" parent="." index="1"]
 
-rotation = 1.5708
-scale = Vector2( 0.1, 0.1 )
-_sections_unfolded = [ "Transform" ]
-
-[node name="Dog1Body" type="Sprite" parent="player1" index="0"]
-=======
-[node name="player1" type="Sprite" parent="." index="1"]
->>>>>>> parent of d9f69ad... killing monsters and resetting works
-=======
-[node name="player1" type="Sprite" parent="." index="1"]
->>>>>>> parent of d9f69ad... killing monsters and resetting works
-=======
-[node name="player1" type="Sprite" parent="." index="1"]
->>>>>>> parent of d9f69ad... killing monsters and resetting works
-=======
-[node name="player1" type="Sprite" parent="." index="1"]
->>>>>>> parent of d9f69ad... killing monsters and resetting works
-
+position = Vector2( 17.5658, 0.35849 )
 texture = ExtResource( 2 )
-_sections_unfolded = [ "Transform" ]
 
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-[node name="Dog1Head" type="Sprite" parent="player1" index="1"]
+[node name="RayCast2D" type="RayCast2D" parent="." index="2"]
 
-rotation = -7.10543e-15
-scale = Vector2( 1, 1 )
-texture = ExtResource( 3 )
-_sections_unfolded = [ "Transform" ]
-
-[node name="Dog1Tail" type="Sprite" parent="player1" index="2"]
-
-texture = ExtResource( 4 )
-_sections_unfolded = [ "Transform" ]
-
-=======
->>>>>>> parent of d9f69ad... killing monsters and resetting works
-=======
->>>>>>> parent of d9f69ad... killing monsters and resetting works
-=======
->>>>>>> parent of d9f69ad... killing monsters and resetting works
-=======
->>>>>>> parent of d9f69ad... killing monsters and resetting works
-[node name="coll_player2" type="CollisionShape2D" parent="." index="2"]
-
-position = Vector2( -5.70153, 200 )
-shape = SubResource( 2 )
-_sections_unfolded = [ "Transform" ]
-
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-[node name="player2" type="Node2D" parent="." index="3"]
-=======
-[node name="player2" type="Sprite" parent="." index="3"]
->>>>>>> parent of d9f69ad... killing monsters and resetting works
-=======
-[node name="player2" type="Sprite" parent="." index="3"]
->>>>>>> parent of d9f69ad... killing monsters and resetting works
-=======
-[node name="player2" type="Sprite" parent="." index="3"]
->>>>>>> parent of d9f69ad... killing monsters and resetting works
-=======
-[node name="player2" type="Sprite" parent="." index="3"]
->>>>>>> parent of d9f69ad... killing monsters and resetting works
-
-position = Vector2( 0, 200 )
-rotation = 1.5708
-scale = Vector2( 0.1, 0.1 )
-_sections_unfolded = [ "Offset", "Transform" ]
-
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-[node name="Dog2Body" type="Sprite" parent="player2" index="0"]
-
-texture = ExtResource( 5 )
-_sections_unfolded = [ "Transform", "Z Index" ]
-
-[node name="Dog2Head" type="Sprite" parent="player2" index="1"]
-
-texture = ExtResource( 6 )
-_sections_unfolded = [ "Transform" ]
-
-[node name="Dog2Tail" type="Sprite" parent="player2" index="2"]
-
-texture = ExtResource( 7 )
-_sections_unfolded = [ "Transform" ]
-
-=======
->>>>>>> parent of d9f69ad... killing monsters and resetting works
-=======
->>>>>>> parent of d9f69ad... killing monsters and resetting works
-=======
->>>>>>> parent of d9f69ad... killing monsters and resetting works
-=======
->>>>>>> parent of d9f69ad... killing monsters and resetting works
-[node name="CollisionShape2D" type="CollisionShape2D" parent="." index="4"]
-
-position = Vector2( 0, 100 )
-rotation = 1.5708
-scale = Vector2( 0.996924, 0.498967 )
-shape = SubResource( 3 )
-_sections_unfolded = [ "Transform" ]
+enabled = true
+exclude_parent = true
+cast_to = Vector2( 2000, 0 )
+collision_mask = 1
 
 
