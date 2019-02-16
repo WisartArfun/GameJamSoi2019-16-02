@@ -5,18 +5,20 @@ const ROT_SPEED = 2
 
 func _physics_process(delta):
 	var move_vec = Vector2()
-	if Input.is_action_pressed("p1_fw") and Input.is_action_pressed("p2_fw"):
+	if Input.is_action_pressed("ui_up") and Input.is_action_pressed("ui_down"):
 		move_vec = Vector2(cos(global_rotation), sin(global_rotation)) * MOVE_SPEED
-	elif Input.is_action_pressed("p1_fw"):
+	elif Input.is_action_pressed("ui_up"):
 		global_rotation += ROT_SPEED * delta
 		move_vec = Vector2(cos(global_rotation), sin(global_rotation)) * 200 * ROT_SPEED
-	elif Input.is_action_pressed("p2_fw"):
+	elif Input.is_action_pressed("ui_down"):
 		global_rotation -= ROT_SPEED * delta
-	var collision = move_and_collide(move_vec * delta)
-	if collision:
-		print(collision.collider.get_name())
-		if collision.collider.get_name() == "Zombie":
-			kill()
+	
+	move_and_collide(move_vec * delta)
+	#var collision = move_and_collide(move_vec * delta)
+	#if collision:
+		#print(collision.collider.get_name())
+		#if collision.collider.get_name() == "Zombie":
+			#kill()
 		#collision.collider.die()
 			 
 	
