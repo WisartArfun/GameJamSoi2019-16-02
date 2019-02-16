@@ -6,6 +6,7 @@ var player = null
 
 func _ready():
 	add_to_group("zombies")
+	player = get_node("../Player")
 
 func _physics_process(delta):
 	if player == null:
